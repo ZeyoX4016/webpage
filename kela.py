@@ -1,7 +1,6 @@
 from PIL import Image
 import json
 import streamlit as st
-from streamlit_lottie import st_lottie
 import os
 import time
 import requests
@@ -28,17 +27,6 @@ lottie_coding = load_lottiefile("lottie/kela.json")
 image_path = ("images/kela.png")
 
 st.title("INTRODUCING")
-st_lottie(
-   lottie_coding,
-   speed=1,
-   reverse=False,
-   loop=True,
-   quality="high",
-   height=300,
-   width=200,
-   key=5,
-
-)
 
 st.header("THE GOLDEN KELA")
 st.title("A Golden Marvel in fruit technology. With advanced features, it unveils the nutritional richness, from mangoes' vitamin-packed flesh to kiwis' protein-rich seeds.")
