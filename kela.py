@@ -5,7 +5,7 @@ import numpy as np
 import streamlit as st
 from PIL import Image
 
-st.set_page_config(page_title="Banana Sales", page_icon="🍌", layout="wide")
+st.set_page_config(page_title="Kela", page_icon="🍌", layout="wide")
 
 def load_lottiefile(filepath: str):
     with open(filepath, "r") as f:
