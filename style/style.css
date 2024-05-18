@@ -40,7 +40,9 @@ header {visibility: hidden;}
 body {
   font-family: 'Certificate', sans-serif; /* Use Lemon Milk as the default font */
 }
-social-icons {
+
+/* Custom CSS for Social Media Icons */
+.social-icons {
   text-align: center;
   margin-top: 20px;
 }
@@ -56,3 +58,4 @@ social-icons {
 .social-icons img:hover {
   transform: scale(1.1);
 }
+
