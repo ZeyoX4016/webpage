@@ -81,7 +81,7 @@ contact_form = """
 
 with st.spinner('Wait for it...'):
     time.sleep(10)
-st.success('apni pen pesh kro neche!')
+st.success('Please fill the details below')
 
 left_column, right_column =st.columns(2)
 with left_column:
