@@ -23,9 +23,9 @@ st.title("The Golden Kela! 🍌")
 
 
 # Product Information
-st.header("The Best Kela's You'll Ever Taste")
+st.header("The Golden Kela Trailer 2024")
 
-YOUTUBE_VIDEO_URL= "https://youtu.be/9xu1cd-Wkz4"
+YOUTUBE_VIDEO_URL= "https://youtu.be/9xu1cd-Wkz4?si=gT9ezfvyEPx8Bgfs"
 st.write(f'<iframe width="640" height="360" src="{YOUTUBE_VIDEO_URL}" frameborder="0" allowfullscreen></iframe>', unsafe_allow_html=True)
 
 st.subheader("The Authentic Lore")
@@ -36,12 +36,13 @@ st.header(
     """
 )
 
-st.header("[The Golden Kela Trailer 2024](https://www.instagram.com/p/C5igXiRNI_Z/)")
+st.header("The Best Kela's You'll Ever Taste")
 
 banana_image = "images/kela.png"
 st.image(banana_image, caption="Fresh and delicious Kela", use_column_width=True)
 
 # Product Metrics
+st.write("---")
 st.header("Product Metrics")
 st.metric("Average Weight", "120g")
 st.metric("Nutritional Value", "89 calories per 100g")
@@ -52,6 +53,7 @@ st.metric(label="Active Kela's", value=69, delta=89,
     delta_color="inverse")
 
 # Sales Analytics
+st.write("---")
 st.header("Sales Analytics")
 chart_data = pd.DataFrame(
     np.random.randn(30, 3),
