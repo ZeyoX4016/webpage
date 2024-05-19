@@ -25,8 +25,8 @@ st.title("The Golden Kela! 🍌")
 # Product Information
 st.header("The Golden Kela Trailer 2024")
 
-YOUTUBE_VIDEO_URL= "https://youtu.be/9xu1cd-Wkz4?si=gT9ezfvyEPx8Bgfs"
-st.write(f'<iframe width="640" height="360" src="{YOUTUBE_VIDEO_URL}" frameborder="0" allowfullscreen></iframe>', unsafe_allow_html=True)
+VIDEO_URL= "https://youtu.be/9xu1cd-Wkz4?si=gT9ezfvyEPx8Bgfs"
+st.video(VIDEO_URL)
 
 st.subheader("The Authentic Lore")
 st.header(
