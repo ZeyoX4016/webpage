@@ -5,7 +5,7 @@ import numpy as np
 import streamlit as st
 from PIL import Image
 
-st.set_page_config(page_title="Kela", page_icon="🍌", layout="wide")
+st.set_page_config(page_title="Kela", page_icon="🍌", layout="wide", initial_sidebar_state="expanded")
 
 def load_lottiefile(filepath: str):
     with open(filepath, "r") as f:
@@ -15,25 +15,30 @@ def local_css(file_name):
     with open(file_name) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
+local_css("style/style.css")
 
-banana_image = "images/kela.png"
 
 # Page Title
 st.title("The Golden Kela! 🍌")
 
 
 # Product Information
-st.header("The Best Bananas You'll Ever Taste")
-st.write(
+st.header("The Best Kela's You'll Ever Taste")
+
+YOUTUBE_VIDEO_URL= "https://youtu.be/9xu1cd-Wkz4"
+st.write(f'<iframe width="640" height="360" src="{YOUTUBE_VIDEO_URL}" frameborder="0" allowfullscreen></iframe>', unsafe_allow_html=True)
+
+st.subheader("The Authentic Lore")
+st.header(
     """
-    Our bananas are sourced from the finest plantations and are guaranteed to be fresh and delicious.
+    Our kela are sourced from the finest plantations and are guaranteed to be fresh and delicious.
     Perfect for snacking, baking, or smoothies. Packed with essential nutrients and vitamins.
     """
 )
 
 st.header("[The Golden Kela Trailer 2024](https://www.instagram.com/p/C5igXiRNI_Z/)")
-st.subheader(" ^^^^^^^^^^^^^^^^^^^^^^^^^ full lore of this kela")
 
+banana_image = "images/kela.png"
 st.image(banana_image, caption="Fresh and delicious Kela", use_column_width=True)
 
 # Product Metrics
@@ -41,7 +46,6 @@ st.header("Product Metrics")
 st.metric("Average Weight", "120g")
 st.metric("Nutritional Value", "89 calories per 100g")
 st.metric("Shelf Life", "7 days")
-st.subheader("gahhh dayyumm")
 
 st.metric("Kela Temprature", '78°C' , '32°C')
 st.metric(label="Active Kela's", value=69, delta=89, 
@@ -51,7 +55,7 @@ st.metric(label="Active Kela's", value=69, delta=89,
 st.header("Sales Analytics")
 chart_data = pd.DataFrame(
     np.random.randn(30, 3),
-    columns=["Bananas Sold", "Revenue ($)", "Customer Satisfaction"]
+    columns=["Kela's Sold", "Revenue ($)", "Customer Satisfaction"]
 )
 st.line_chart(chart_data)
 
@@ -85,11 +89,8 @@ social_media_html = """
     <a href="https://www.facebook.com/yourprofile" target="_blank">
         <img src="images/facebook.png" alt="Facebook">
     </a>
-    <a href="https://www.twitter.com/yourprofile" target="_blank">
-        <img src="images/twitter.png" alt="Twitter">
-    </a>
     <a href="https://www.instagram.com/zeyox.4016/" target="_blank">
-        <img src="images/instagram.png" alt="Instagram">
+        <img src="images/insta.png" alt="Instagram">
     </a>
 </div>
 """
