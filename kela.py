@@ -22,7 +22,7 @@ local_css("style/style.css")
 st.title("The Golden Kela! 🍌")
 st.header(
     """
-    Our Kela are sourced from the finest plantations and are guaranteed to be fresh and delicious. 
+    Our Kela Are Sourced From The Finest Plantations And Are Guaranteed To Be Fresh and Delicious. 
     Perfect for snacking, baking, or smoothies. Packed with essential nutrients and vitamins.
     """
 )
