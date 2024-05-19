@@ -20,21 +20,21 @@ local_css("style/style.css")
 
 # Page Title
 st.title("The Golden Kela! 🍌")
-
-
-# Product Information
-st.header("The Golden Kela Trailer 2024")
-
-VIDEO_URL= "https://youtu.be/9xu1cd-Wkz4?si=gT9ezfvyEPx8Bgfs"
-st.video(VIDEO_URL)
-
-st.subheader("The Authentic Lore")
 st.header(
     """
     Our kela are sourced from the finest plantations and are guaranteed to be fresh and delicious.
     Perfect for snacking, baking, or smoothies. Packed with essential nutrients and vitamins.
     """
 )
+
+
+# Product Information
+st.title("The Golden Kela Trailer 2024")
+
+VIDEO_URL= "https://youtu.be/9xu1cd-Wkz4?si=gT9ezfvyEPx8Bgfs"
+st.video(VIDEO_URL)
+
+st.subheader("The Authentic Lore")
 
 st.header("The Best Kela's You'll Ever Taste")
 
