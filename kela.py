@@ -22,7 +22,7 @@ local_css("style/style.css")
 st.title("The Golden Kela! 🍌")
 st.header(
     """
-    Our kela are sourced from the finest plantations and are guaranteed to be fresh and delicious.
+    Our Kela are sourced from the finest plantations and are guaranteed to be fresh and delicious. 
     Perfect for snacking, baking, or smoothies. Packed with essential nutrients and vitamins.
     """
 )
@@ -48,8 +48,8 @@ st.metric("Average Weight", "120g")
 st.metric("Nutritional Value", "89 calories per 100g")
 st.metric("Shelf Life", "7 days")
 
-st.metric("Kela Temprature", '78°C' , '32°C')
-st.metric(label="Active Kela's", value=69, delta=89, 
+st.metric("Kela's Temprature", '50°C' , '30°C')
+st.metric(label="Current Slaves", value=69, delta="89 Executed", 
     delta_color="inverse")
 
 # Sales Analytics
@@ -85,19 +85,6 @@ with left_column:
     st.markdown(contact_form, unsafe_allow_html=True)
 with right_column:
     st.write("---") 
-st.write("## Follow Us")
-social_media_html = """
-<div class="social-icons">
-    <a href="https://www.facebook.com/yourprofile" target="_blank">
-        <img src="images/facebook.png" alt="Facebook">
-    </a>
-    <a href="https://www.instagram.com/zeyox.4016/" target="_blank">
-        <img src="images/insta.png" alt="Instagram">
-    </a>
-</div>
-"""
-
-st.markdown(social_media_html, unsafe_allow_html=True)
 
 # Footer
 st.write("---")
