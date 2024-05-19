@@ -49,7 +49,7 @@ st.metric("Nutritional Value", "89 calories per 100g")
 st.metric("Shelf Life", "7 days")
 
 st.metric("Kela's Temprature", '50°C' , '30°C')
-st.metric(label="Current Slaves", value=69, delta="89 Executed", 
+st.metric(label="Current Slaves Working To Make Golden Kela", value=69, delta="89 Executed", 
     delta_color="inverse")
 
 # Sales Analytics
