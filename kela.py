@@ -63,7 +63,7 @@ st.line_chart(chart_data)
 
 # Contact Form
 st.write("---")
-st.header("Contact Us")
+st.header("Order Now!")
 
 contact_form = """
 <form action="https://formsubmit.co/ahmedzayan433@gmail.com" method="POST">
