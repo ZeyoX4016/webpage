@@ -64,15 +64,14 @@ st.line_chart(chart_data)
 # Contact Form
 st.write("---")
 st.header("Order Now!")
-
 contact_form = """
 <form action="https://formsubmit.co/ahmedzayan433@gmail.com" method="POST">
    <input type="hidden" name="_captcha" value="false">
    <input type="text" name="name" placeholder="Your name" required>
    <input type="email" name="email" placeholder="Your email" required>
-   <input type="quantity" name="quantity" placeholder="Quantity?" required>
-   <textarea name="message" placeholder="Your Message Here" required></textarea>
-   <button type="submit">Send</button>
+   <input type="quantity" name="quantity" placeholder="Your Quantity Here" required>
+   <textarea name="message" placeholder="Your Address Here" required></textarea>
+   <button type="submit">Order</button>
 </form>
 """
 
@@ -84,7 +83,7 @@ left_column, right_column = st.columns(2)
 with left_column:
     st.markdown(contact_form, unsafe_allow_html=True)
 with right_column:
-    st.write("---") 
+     st.empty()
 
 # Footer
 st.write("---")
