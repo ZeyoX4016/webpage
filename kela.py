@@ -69,8 +69,8 @@ contact_form = """
    <input type="hidden" name="_captcha" value="false">
    <input type="text" name="name" placeholder="Your name" required>
    <input type="email" name="email" placeholder="Your email" required>
-   <input type="quantity" name="quantity" placeholder="Your Quantity Here" required>
-   <textarea name="message" placeholder="Your Address Here" required></textarea>
+   <input type="quantity" name="quantity" placeholder="Your Quantity" required>
+   <textarea name="message" placeholder="Your Address" required></textarea>
    <button type="submit">Order</button>
 </form>
 """
